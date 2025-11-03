@@ -96,5 +96,20 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
 
+    printf("\n---Resultado da batalha---\n");
+    if (pibPerCapita1 > pibPerCapita2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", nomeCidade1);
+    } else if (pibPerCapita2 > pibPerCapita1) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", nomeCidade2);
+    } else {
+        printf("Resultado: Empate!\n");
+    }
+
+   
+    printf("\n--- Informacoes adicionais ---\n");
+    printf("%s - Densidade: %.2f hab/km² | PIB total: %.2f\n", nomeCidade1, densidade1, pib1);
+    printf("%s - Densidade: %.2f hab/km² | PIB total: %.2f\n", nomeCidade2, densidade2, pib2);
+
+
     return 0;
 }
